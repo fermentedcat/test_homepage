@@ -19,6 +19,60 @@
         <img class="frontimg" src="images/computer.jpg" alt="Jag kastar en dator">
     </div>
     
+    <form action="POST" class="form">
+        
+        <div>
+            <input type="text" placeholder="Namn Efternamn" required>*<br>
+            <input type="password" required>*<br>
+            <input type="date" required>*<br>
+            <input type="email" required>*<br>
+            <input type="number"><br>
+            <label for="personal-info">Personlig information</label><br>
+            <textarea name="pers_info" id="personal-info" cols="30" rows="10" maxlength="100"></textarea>
+        </div>
+        <div>
+            Favoritfärg:
+            <br>
+            <input type="color">
+        </div>
+        <div>
+            <label for="weekday">Favoritdag:</label><br>
+            <select name="day" id="weekday">
+                <option value="monday">Måndag</option>
+                <option value="tuesday" selected>Tisdag</option>
+                <option value="wednesday">Onsdag</option>
+                <option value="thursday">Torsdag</option>
+                <option value="friday">Fredag</option>
+                <option value="saturday">Lördag</option>
+                <option value="sunday">Söndag</option>
+            </select>
+        </div>
+        <div>
+            Vilken dator använder du?<br>
+            <label for="mac">Mac</label>
+            <input type="radio" name="computer" id="mac">
+            <label for="pc">PC</label>
+            <input type="radio" name="computer" id="computer">
+        </div>
+        <div>
+            Vilka av dessa TV-serier har du sett?
+            <br>
+            <input type="checkbox" id="office">
+            <label for="office">The Office</label><br>
+            <input type="checkbox" id="dlm">
+            <label for="dlm">Dead Like Me</label><br>
+            <input type="checkbox" id="daria">
+            <label for="daria">Daria</label><br>
+            <input type="checkbox" id="tp">
+            <label for="tp">Twin Peaks</label><br>
+            <input type="checkbox" id="gilmore">
+            <label for="gilmore">Gilmore Girls</label>
+            <br>
+        </div>
+        
+
+        <input type="submit" value="SKICKA">
+    </form>
     
     
 </body>
